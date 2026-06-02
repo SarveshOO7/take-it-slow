@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN"
+  "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <!-- Required to use FamilyControls, ManagedSettings, DeviceActivity -->
+  <key>com.apple.developer.family-controls</key>
+  <true/>
+
+  <!-- Shared UserDefaults with the DeviceActivityMonitor extension -->
+  <key>com.apple.security.application-groups</key>
+  <array>
+    <string>group.com.takeitSlow</string>
+  </array>
+
+  <!-- Background fetch for the re-block task -->
+  <key>com.apple.developer.background-task-scheduler-allowed-task-identifiers</key>
+  <array>
+    <string>com.takeitSlow.reblock</string>
+  </array>
+</dict>
+</plist>
